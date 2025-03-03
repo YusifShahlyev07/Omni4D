@@ -75,11 +75,11 @@
                     <b>Partnerships with Major Companies:</b> There is potential for strategic partnerships with other leading companies in related industries, helping to increase brand visibility and sales.<br>
                     <b>Technological Advancements:</b> As technology continues to improve, there are opportunities to enhance our device even further, making it more powerful and accessible to a larger group of users.`;
             } else if (type === 'threads') {
-                content = `
-                    <b>Parallel Data Processing :</b>This thread is used for parallel processing, a key feature of Omni 4D. It processes large volumes of data simultaneously in four different directions.<br>
-                    <b>AI Computation :</b> This thread optimizes the execution of artificial intelligence and machine learning models within Omni 4D. It is specifically designed for fast neural network processing.<br>
-                    <b>Real-Time Analytics :</b> This thread is responsible for high-speed analytics in Omni 4D. It works with big data to perform real-time analyses efficiently.<br>
-                    <b>Dynamic Load Balancing :</b> This thread manages load distribution within the Omni 4D system, ensuring optimal resource utilization and minimizing performance loss through automatic balancing.`;
+        content = `
+            <b>ParallelProcessingThread – High Resource Consumption:</b> While enabling multi-directional parallel processing, this thread demands significant CPU and GPU power. If not optimized, it can lead to excessive resource usage, increased energy consumption, and overheating, reducing hardware lifespan.<br>
+            <b>AIComputationThread – Complex and Error-Prone:</b> This AI processing thread requires advanced neural network models, which can be prone to errors, miscalculations, and biases. Training and executing these models demand high computational power, making real-time adjustments challenging and sometimes unreliable.<br>
+            <b>RealTimeAnalyticsThread – Data Overload & Latency Risks:</b> Handling large datasets in real-time can overwhelm system memory and processing capabilities. If the thread fails to process data efficiently, it may cause delays, inaccurate predictions, or system crashes under extreme loads.<br>
+            <b>LoadBalancingThread – Unstable Performance Under Heavy Load:</b> While designed to distribute tasks dynamically, this thread can struggle with unpredictable workloads. If the balancing mechanism fails, some cores may become overburdened while others remain underutilized, leading to performance inconsistencies and slow response times.`;
             }
             document.getElementById("info_section").innerHTML = content;
         }

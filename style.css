@@ -1,6 +1,6 @@
 /* General Page Styling */
 body {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(to right, #1e3c72, #2a5298);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -16,9 +16,11 @@ body {
     to { opacity: 1; }
 }
 
+/* Header Styling */
 h1, h2, h3 {
-    color: #fff;
+    color: #f8f8f8;
     margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     animation: slideIn 1.2s ease-in-out;
 }
 
@@ -27,13 +29,20 @@ h1, h2, h3 {
     to { transform: translateY(0); opacity: 1; }
 }
 
-p {
-    font-size: 18px;
-    color: #f1f1f1;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: auto;
-    animation: fadeIn 1.5s ease-in-out;
+/* Info Section */
+#info_section {
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    backdrop-filter: blur(10px);
 }
 
 /* Button Styling */
@@ -48,7 +57,7 @@ button {
     background: rgba(255, 255, 255, 0.2);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    animation: fadeIn 2s ease-in-out;
+    backdrop-filter: blur(5px);
 }
 
 button:hover {
@@ -64,29 +73,13 @@ button:hover {
     border-radius: 10px;
 }
 
-/* Info Section */
-#info_section {
-    font-size: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
-}
-
 /* Footer Styling */
 footer {
-    margin-top: 30px;
-    padding: 25px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
+    padding: 25px;
     font-size: 14px;
-    animation: fadeIn 2s ease-in-out;
+    text-shadow: none;
 }
 
 footer a {
@@ -110,11 +103,6 @@ footer a {
 @keyframes slideUp {
     from { transform: translateY(20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
-}
-
-section {
-    opacity: 0;
-    animation: slideUp 1.5s ease-in-out forwards;
 }
 
 /* Responsive Design */
