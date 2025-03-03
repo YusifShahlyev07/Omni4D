@@ -8,11 +8,23 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 h1, h2, h3 {
     color: #fff;
     margin-bottom: 15px;
+    animation: slideIn 1.2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 p {
@@ -21,6 +33,7 @@ p {
     line-height: 1.6;
     max-width: 800px;
     margin: auto;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Button Styling */
@@ -35,10 +48,11 @@ button {
     background: rgba(255, 255, 255, 0.2);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.4);
+    animation: fadeIn 2s ease-in-out;
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     background: rgba(255, 255, 255, 0.4);
 }
 
@@ -61,6 +75,8 @@ button:hover {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
 /* Footer Styling */
@@ -70,6 +86,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     font-size: 14px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 footer a {
@@ -82,10 +99,22 @@ footer a {
 .paypal-button {
     margin-top: 30px;
     padding-top: 15px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .paypal-image {
     max-width: 120px;
+}
+
+/* Smooth Section Reveal */
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+section {
+    opacity: 0;
+    animation: slideUp 1.5s ease-in-out forwards;
 }
 
 /* Responsive Design */
