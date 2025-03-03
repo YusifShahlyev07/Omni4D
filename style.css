@@ -1,68 +1,97 @@
+/* General Page Styling */
 body {
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #fff;
 }
 
-h2, h1, h3 {
-    color: #333;
+h1, h2, h3 {
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.5;
+    font-size: 18px;
+    color: #f1f1f1;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
 }
 
+/* Button Styling */
 button {
     cursor: pointer;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+button:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* SWOT Buttons */
 .Swot {
     margin: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 10px;
 }
 
+/* Info Section */
 #info_section {
-    font-size: 24px;
-    background: white;
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
 
-a button {
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/* Footer Styling */
 footer {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #333;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
+    font-size: 14px;
 }
 
 footer a {
     color: #1E90FF;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.paypal-button{
-    margin-top: 25px;
+/* PayPal Button */
+.paypal-button {
+    margin-top: 30px;
     padding-top: 15px;
 }
-.paypal-image{
-    max-width: 110px;
+
+.paypal-image {
+    max-width: 120px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    p, button, #info_section {
+        width: 90%;
+    }
+}
+
